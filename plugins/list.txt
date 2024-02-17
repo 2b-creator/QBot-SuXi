@@ -1,0 +1,24 @@
+用法：/[options] [args]=[<ist>...]或戳一戳
+
+[options]
+选项：
+  /help                              显示帮助信息,这和/？作用是一样的
+  /set <message> tags=<tags>         添加带有标签的记录，使用中文逗号分隔符
+  /see tags=<tags>                   检索带有标签的记录，使用中文逗号分隔符
+  -戳一戳                             随机一言
+
+[args]
+参数：
+  <tags>                             标签，使用中文逗号分隔符
+
+示例：
+  /set This is a message tags=tag1,tag2,tag3    向机器内记录信息
+  /see tags=tag1,tag2                检索带有标签tag1和tag2的记录
+
+指令列表/？或/help
+记录标签/set 内容 tag=标签1标签2
+查看记录/see tag=标签1，标签2
+开始记录/log on
+暂停记录/log off
+结束记录/log end
+随机一言#戳一戳
