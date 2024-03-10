@@ -82,11 +82,11 @@ class ReRead(Plugin):
 
 
 @scheduler_decorator(
-    trigger="interval", trigger_args={"seconds": 10}, override_rule=True
+    trigger="cron", trigger_args={"hour": 22, "minute": 15}, override_rule=True
 )
 class SleepNotice(Plugin):
     async def handle(self) -> None:
-        await self.bot.get_adapter("mirai").call_api("sendGroupMessage", target=932490832,
+        await self.bot.get_adapter("mirai").call_api("sendGroupMessage", target=563575055,
                                                      messageChain=[{"type": "Plain", "text": "晚上好，记得睡觉哦~"}])
 
     async def rule(self) -> bool:
@@ -96,8 +96,9 @@ class SleepNotice(Plugin):
 from alicebot import Bot
 
 bot = Bot()
-bot.load_plugins_from_dirs(pathlib.Path("./plugins"))
-bot.load_plugins(HalloAlice, OneSent, ReRead)
+bot.load_plugins_from_dirs(pathlib.Path("./plugins_1"))
+# bot.load_plugins_from_dirs(pathlib.Path("./plugins"))
+# bot.load_plugins(HalloAlice, OneSent, ReRead, SleepNotice)
 
 if __name__ == "__main__":
     bot.run()

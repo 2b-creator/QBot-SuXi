@@ -3,8 +3,9 @@ adapters = ["alicebot.adapter.mirai","alicebot.adapter.apscheduler"]
 
 [adapter.mirai]
 adapter_type = "ws"
-
+verify_key = "INITKEYjCmTAeEG"
 qq = 3267653962
 
 [adapter.apscheduler]
 scheduler_config = { "apscheduler.timezone" = "Asia/Shanghai" }
+
