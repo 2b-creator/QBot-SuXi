@@ -1,3 +1,5 @@
 *.txt
+!plugins_1/mgc_jf.txt
+!plugins_1/sensitive_words.txt
 plugins/PGheaders.txt
 config.toml

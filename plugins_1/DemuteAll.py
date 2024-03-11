@@ -4,7 +4,7 @@ from alicebot.adapter.mirai.message import MiraiMessageSegment
 
 
 @scheduler_decorator(
-    trigger="cron", trigger_args={"hour": 7, "minute": 59}, override_rule=True
+    trigger="cron", trigger_args={"hour": 17, "minute": 45}, override_rule=True
 )
 class DeMuteAll_1(Plugin):
     async def handle(self) -> None:
@@ -16,7 +16,7 @@ class DeMuteAll_1(Plugin):
 
 
 @scheduler_decorator(
-    trigger="cron", trigger_args={"hour": 7, "minute": 59}, override_rule=True
+    trigger="cron", trigger_args={"hour": 17, "minute": 45}, override_rule=True
 )
 class DeMuteAll_2(Plugin):
     async def handle(self) -> None:
