@@ -19,7 +19,7 @@ class SensitiveWords(Plugin):
             fromWho = self.event.sender.id
             fromGroup = self.event.sender.group.id
             ptrMessage = self.event.messageChain.as_message_chain()[0]["id"]
-            logger.info(self.event.messageChain.as_message_chain()[0]["id"])
+            # logger.info(self.event.messageChain.as_message_chain()[0]["id"])
             fp = open("plugins_1/sensitive_words.txt", "r", encoding="utf-8")
             strList = eval(fp.read())
             for i in strList:

@@ -8,6 +8,7 @@ groupList = [784393141]
 
 class SendProgram(Plugin):
     async def handle(self) -> None:
+        # msg = MiraiMessageSegment.image(url="https://s2.loli.net/2024/03/10/dfOHV8tMgYG7QDE.png")
         msg = MiraiMessageSegment.image(url="https://s2.loli.net/2024/03/10/dfOHV8tMgYG7QDE.png")
         await self.event.reply(msg)
 
