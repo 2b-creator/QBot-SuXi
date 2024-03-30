@@ -14,5 +14,5 @@ class Autolx(Plugin):
     async def rule(self) -> bool:
         if self.event.adapter.name != "mirai":
             return False
-        if self.event.type == "BotInvitedJoinGroupRequestEvent":
+        if self.event.type == "FriendAddEvent":
             return True

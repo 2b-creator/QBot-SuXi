@@ -78,6 +78,8 @@ from alicebot import Bot
 
 bot = Bot()
 bot.load_plugins_from_dirs(pathlib.Path("./plugins_1"))
+bot.load_plugins_from_dirs(pathlib.Path("./tex_bot"))
+bot.load_plugins_from_dirs(pathlib.Path("./aichat"))
 # bot.load_plugins_from_dirs(pathlib.Path("./NewMemberHandler"))
 # bot.load_plugins_from_dirs(pathlib.Path("./plugins"))
 # bot.load_plugins(HalloAlice, OneSent, ReRead, SleepNotice)
